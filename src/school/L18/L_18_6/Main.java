@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        int n = 10;
+        int n = 5;
         int[]a = new int[n];
 
         int x = (int)(Math.random() * 99 + 1);
