@@ -1,4 +1,4 @@
-package school.L18.L_18_17;
+package school.L18.L_18_17_No;
 
 public class Main {
     public static void main(String[] args) {
