@@ -2,8 +2,8 @@ package uchebnikTeoria.classjava;
 
 public class Main {
     public static void main(String[] args) {
-        Point a = new Point('A',6,8);
-        Point b = new Point('B',23,45);
+        Point a = new Point('A',6,8); // точка
+        Point b = new Point('B',23,45); // точка
         System.out.println(quarto(a));
         System.out.println(isAxis(a));
         System.out.println(pandP(a, b));
