@@ -17,7 +17,7 @@ public class Rational {
         this.num_down = in.nextInt();
     }
 
-    public String toString(){
+    public String toString() {
         return this.num_up + "/" + this.num_down;
     }
 
@@ -28,34 +28,36 @@ public class Rational {
     public int getNum_down() {
         return this.num_down;
     }
-    public Rational multiply(Rational num){ // //произведение данной дроби и дроби-параметра
+
+    public Rational multiply(Rational num) { // //произведение данной дроби и дроби-параметра
         int x = this.num_up * num.num_up;
         int y = this.num_down * num.num_down;
-        Rational c = new Rational(x,y);
+        Rational c = new Rational(x, y);
         return c;
     }
 
-    public Rational sum(Rational num){ //сумма данной дроби и дроби-параметра
-        int x  = this.num_up * num.num_down + num.num_up * this.num_down;
+    public Rational sum(Rational num) { //сумма данной дроби и дроби-параметра
+        int x = this.num_up * num.num_down + num.num_up * this.num_down;
         int y = this.num_down * num.num_down;
-        Rational c =new Rational(x,y);
+        Rational c = new Rational(x, y);
         return c;
     }
-    public Rational devide(Rational num){ ////новая дробь, как результат деления данной дроби на дробь-параметр
-        int x  = this.num_up * num.num_down;
+
+    public Rational devide(Rational num) { ////новая дробь, как результат деления данной дроби на дробь-параметр
+        int x = this.num_up * num.num_down;
         int y = this.num_down * num.num_up;
-        Rational c =new Rational(x,y);
+        Rational c = new Rational(x, y);
         return c;
     }
 
-    public Rational hisur(Rational num){ //новая дробь, как результат вычитания из данной дроби дробипараметра
-        int x  = this.num_up * num.num_down - num.num_up * this.num_down;
+    public Rational hisur(Rational num) { //новая дробь, как результат вычитания из данной дроби дробипараметра
+        int x = this.num_up * num.num_down - num.num_up * this.num_down;
         int y = this.num_down * num.num_down;
-        Rational c =new Rational(x,y);
+        Rational c = new Rational(x, y);
         return c;
     }
 
-    public boolean equals(Rational num){/*Сравнение данной дроби с дробью-параметром
+    public boolean equals(Rational num) {/*Сравнение данной дроби с дробью-параметром
                                           Возвращает true, если дроби равны; возвращает false, если дроби не
                                           равны*/
         return this.num_up == num.num_up && this.num_down == num.num_down;
@@ -68,57 +70,17 @@ public class Rational {
 Возвращает -1, если данная дробь меньше дроби-параметра
 */
 
-    public int compareTo(Rational num){
-        if(this.num_up *num.num_down > num.num_up *this.num_down)
-            if(this.num_down*num.num_down > 0) return  1;
-        else return  -1;
-        if(this.num_up * num.num_down < num.num_up  *this.num_down)
-            if(this.num_down  * num.num_down  > 0)
-                return  -1;
-        else return  1;
+    public int compareTo(Rational num) {
+        if (this.num_up * num.num_down > num.num_up * this.num_down)
+            if (this.num_down * num.num_down > 0)
+                return 1;
+            else
+                return -1;
+        if (this.num_up * num.num_down < num.num_up * this.num_down)
+            if (this.num_down * num.num_down > 0)
+                return -1;
+            else
+                return 1;
         return 0;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
