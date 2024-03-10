@@ -1,4 +1,4 @@
-package uchebnikTeoria.prostayadrobp1;
+package uchebnikTeoria.prostayadrob_p1;
 
 import java.util.Scanner;
 
@@ -13,7 +13,9 @@ public class Rational {
     }
 
     public Rational() {
+        System.out.print("Введите числитель: ");
         this.num_up = in.nextInt();
+        System.out.print("Введите знаменатель: ");
         this.num_down = in.nextInt();
     }
 
