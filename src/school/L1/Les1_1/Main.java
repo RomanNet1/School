@@ -1,7 +1,7 @@
 package school.L1.Les1_1;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) {//
         //int 1x;     // неправильно
         double t;     // правильно
         int t1;        // правильно
