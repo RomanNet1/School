@@ -7,7 +7,9 @@ public class Main {
 
         if(a + b > 100 && a + b < 200){}
 
-        if(a/3 == )
+        if(a/3 == a){
+
+        }
 
     }
 }
