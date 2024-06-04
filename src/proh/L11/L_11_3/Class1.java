@@ -1,4 +1,4 @@
-package proh.L_11_3;
+package proh.L11.L_11_3;
 
 public class Class1 {
     public Class1() {
