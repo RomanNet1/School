@@ -1,4 +1,4 @@
-package guskova;
+package main.java;
 
 public class Main {
 }
